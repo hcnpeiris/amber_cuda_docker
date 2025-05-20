@@ -1,4 +1,4 @@
-# AmberTools with CUDA - Docker Build
+# Amber24 and AmberTools25 with CUDA - Docker Build
 
 This repository contains a simple Dockerfile to build a containerized CUDA-accelerated version of Amber24 and AmberTools25.  
 The container includes all necessary tools and dependencies required to compile and run Amber.
