@@ -1,7 +1,12 @@
 # Amber24 and AmberTools25 with CUDA - Docker Build
 
-This repository contains a simple Dockerfile to build a containerized CUDA-accelerated version of Amber24 and AmberTools25.  
-The container includes all necessary tools and dependencies required to compile and run Amber.
+This repository provides a simple `Dockerfile` to help you easily build and run Amber24 and AmberTools25 with CUDA support in a Docker container.
+
+**Why use this?** 
+Installing CUDA, its dependencies, and other scientific software on Linux can be complicated and often leads to compatibility problems. This Docker image solves that by putting everything you need into lightweight, isolated environment. For calculations that use your GPU (like Amber's `pmemd.cuda`), performance is generally not affected when running inside Docker, as it directly uses your GPU. This is different from CPU-heavy software, where both your main system and the Docker container might compete for CPU power.
+
+**Important Note:** 
+Due to licensing restrictions, the Amber24 source code **cannot be distributed** with this repository. Users are required to obtain their own licensed copies.
 
 ## Requirements
 
@@ -49,3 +54,4 @@ sudo docker run --gpus all -it amber_cuda
 ## Notes
 
 - No need to manually install any dependencies — everything is handled during the Docker image build process.
+- **Be mindful of disk space:** Both the Docker image itself and Amber's output files can consume significant storage. Ensure you have sufficient disk space available on your system.
