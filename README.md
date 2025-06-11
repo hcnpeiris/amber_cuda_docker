@@ -17,7 +17,7 @@ Due to licensing restrictions, the Amber24 source code **cannot be distributed**
 - NVIDIA GPU with drivers  
   [Install NVIDIA Drivers on Ubuntu](https://documentation.ubuntu.com/server/how-to/graphics/install-nvidia-drivers/index.html)
 - NVIDIA Container Toolkit  
-  [Install NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.htmlinstallation)
+  [Install NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)
 
 ## Getting Started
 
